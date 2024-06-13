@@ -21,3 +21,19 @@
 ## macOS
 
 - Follow the steps provided in the Downloads [Page](https://developer.hashicorp.com/terraform/downloads) for macOS.
+
+
+## to create the s3 bucket using the terraform 
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_s3_bucket" "example" {
+  bucket = "mybucketname626"  # Corrected bucket name (removed extra 'y')
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+
