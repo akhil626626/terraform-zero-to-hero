@@ -21,6 +21,12 @@ In your terminal, navigate to the directory containing your Terraform configurat
 terraform init
 ```
 
+## To check the what are resources going to create in the cloud platform.
+
+```
+terraform plan
+```
+
 This command initializes the Terraform working directory, downloading any necessary provider plugins.
 
 ## Apply the Configuration
